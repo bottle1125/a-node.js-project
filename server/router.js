@@ -1,5 +1,6 @@
 function route(handle, pathname, response, postData) {
     console.log("About to route a request for" + pathname);
+    console.log(handle["public/test.js"])
     if(typeof handle[pathname] == 'function') {
         handle[pathname](response, postData);
     }else {

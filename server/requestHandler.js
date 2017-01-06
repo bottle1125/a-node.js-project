@@ -1,6 +1,7 @@
 var exec = require("child_process").exec;
 var fs = require("fs");
 var queryString = require("querystring");
+var md = require('markdown').markdown;
 
 function start(response, postData) {
     console.log("Request handler 'start' was called.");
